@@ -1,1 +1,5 @@
 # (The Stuff) Stuff
+
+The Stuff is my answer to Python's dependency injection problem—something I've been itching to solve after years of working extensively with NestJS and missing that elegant DI system every time I switched back to Python. I know NestJS inside and out, and frankly, I got tired of Python's hodgepodge of DI solutions that never quite delivered the same developer experience.
+
+What I'm building is a decorator-driven framework because manual dependency wiring drives me nuts. I've tried the existing Python solutions where you have to explicitly wire everything by hand, and it just feels wrong after experiencing how smoothly NestJS handles this stuff. So I'm implementing automatic dependency resolution through topological sorting—the kind of thing that figures out your dependency graph without you having to think about it. The circular dependency detection came from too many late nights debugging dependency loops. I wanted something that would just tell me "hey, you've got a circular reference here" instead of letting my application blow up in mysterious ways. **And stuff.**
